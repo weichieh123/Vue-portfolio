@@ -1,5 +1,5 @@
 <template>
-  <div class="header">
+  <div class="header" :class="{ active: isOpen }">
     <div class="logo">
       <el-icon><video-camera-filled /></el-icon>
       <span> Weichieh</span>

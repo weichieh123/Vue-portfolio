@@ -2,7 +2,7 @@
 
 .header {
     position: fixed;
-    background-color: rgb(255, 255, 255);
+    background-color: $color_White;
     width: 100vw;
     height: $navHeight;
     display: flex;
@@ -13,10 +13,9 @@
     left: 0;
     z-index: 999;
     .logo {
-      color: #4f85a5;
+      color: $color_Blue;
       margin-left: 40px;
       line-height: $navHeight;
-      font-family: 'Montserrat', sans-serif;
       font-size: 32px;
       font-weight: 500;
       cursor: pointer;
@@ -34,7 +33,7 @@
         cursor: pointer;
         outline: none;
         span {
-          background: #4f85a5;
+          background: $color_Blue;
           display: block;
           width: 20px;
           height: 2px;
@@ -92,8 +91,8 @@
             font-size: 1.6em;
             padding: 0.5em 1.5rem;
             display: block;
-            color: #4f85a5;
-            transition: 0.4s ease;
+            color: $color_Blue;
+            transition: 0.1s ease;
             // width: 130px;
             &.sub-item {
               // width: 95px;
@@ -102,8 +101,9 @@
             }
 
             &:hover {
-            background: #f2f491;
-            color: dimgrey;
+            // background: #f2f491;
+            // color: dimgrey;
+            font-weight: bold;
             }
         }
       }
@@ -111,7 +111,7 @@
     nav {
         width: $menuWidth;
         height: 100vh;
-        background-color: #fff;
+        background-color: $color_White;
         position: fixed;
         top: 0;
         right: -$menuWidth;
