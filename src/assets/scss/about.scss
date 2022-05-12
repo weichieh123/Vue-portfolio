@@ -1,4 +1,12 @@
 
 .about {
     background-color: lightcoral;
+    h2 {
+        margin: 0;
+        padding: 20px;
+        color: #eee;
+    }
+    :deep(.el-timeline-item__timestamp){
+        color: #eee;
+    }
 }
