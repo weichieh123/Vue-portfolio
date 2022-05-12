@@ -1,0 +1,112 @@
+// @import './global.scss';
+
+.header {
+    position: fixed;
+    background-color: rgb(255, 255, 255);
+    width: 100vw;
+    height: $navHeight;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    .logo {
+      color: #4f85a5;
+      margin-left: 40px;
+      line-height: $navHeight;
+      font-family: 'Montserrat', sans-serif;
+      font-size: 32px;
+      font-weight: 500;
+      cursor: pointer;
+    }
+    .sidemenu {
+      margin-right: 30px;
+      &__btn {
+        display: block;
+        width: 50px;
+        height: 50px;
+        border: none;
+        position: relative;
+        z-index: 100;
+        appearance: none;
+        cursor: pointer;
+        outline: none;
+        span {
+          background: #4f85a5;
+          display: block;
+          width: 20px;
+          height: 2px;
+          margin: auto;
+          position: absolute;
+          top: 0;
+          bottom: 0;
+          left: 0;
+          right: 0;
+          transition: all 0.4s ease;
+          &.top {
+            transform: translateY(-8px);
+          }
+          &.bottom {
+            transform: translateY(8px);
+          }
+        }
+        &.active {
+          .top {
+            transform: rotate(-45deg);
+          }
+          .mid {
+            transform: translateX(-20px) rotate(360deg);
+            opacity: 0;
+          }
+          .bottom {
+            transform: rotate(45deg);
+          }
+        }
+      }
+      &__wrap {
+        margin-top: 150px;
+      }
+  
+      &__list {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+      }
+  
+      &__item {
+        a {
+            text-decoration: none;
+            line-height: 1.6em;
+            font-size: 1.6em;
+            padding: 0.5em 1rem;
+            display: block;
+            color: #4f85a5;
+            transition: 0.4s ease;
+
+            &:hover {
+            background: #f2f491;
+            color: dimgrey;
+            }
+        }
+      }
+    }
+    nav {
+        width: 200px;
+        height: 100vh;
+        background-color: #fff;
+        position: fixed;
+        top: 0;
+        right: -200px;
+        z-index: 99;
+        transition: 0.4s ease;
+        &.active {
+            right: 0;
+        }
+    }
+  }

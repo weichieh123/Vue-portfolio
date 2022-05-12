@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+$navHeight: 70px;
+$breakpoint_XL: 1200px;
+$breakpoint_L: 992px;
+$breakpoint_M: 768px;
+$breakpoint_S: 576px;
+
+
+
+@mixin size_XL {
+    @media (max-width:$breakpoint_XL){
+        @content;
+    }
+}
+@mixin size_L {
+    @media (max-width:$breakpoint_L){
+        @content;
+    }
+}
+@mixin size_M {
+    @media (max-width:$breakpoint_M){
+        @content;
+    }
+}
+@mixin size_S {
+    @media (max-width:$breakpoint_S){
+        @content;
+    }
+}

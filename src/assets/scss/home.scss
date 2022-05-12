@@ -1,0 +1,29 @@
+
+.home {
+    // background-color: rgb(242, 244, 145);
+    position: relative;
+    .title {
+      position: absolute;
+      width: 500px;
+      top: calc(50vh - #{$navHeight}/2);
+      left: calc(50vw - 250px);
+      font-size: 40px;
+      color: #fff;
+    }
+    :deep(.el-carousel__container){
+      width: 100vw;
+      height: calc(100vh - #{$navHeight});
+      margin: 0 auto;
+      display: flex; // 圖片置中
+      align-items: center;
+      
+      img {
+        // 圖片滿版
+        width: 100%;
+        height: 100%;
+        max-width: 100%;
+        max-height: 100%;
+        object-fit: cover;
+      }
+    }
+  }
