@@ -18,12 +18,16 @@
     <nav :class="{ active: isOpen }">
       <div class="sidemenu__wrap">
         <ul class="sidemenu__list">
-          <!-- v-scroll-to="'#home'" -->
-          <!-- v-scroll-to="'#about'" -->
-          <!-- v-scroll-to="'#works-vue'" -->
           <li class="sidemenu__item" @click="isOpen = false"><a href="#home" >Home</a> </li>
           <li class="sidemenu__item" @click="isOpen = false"><a href="#about" >About</a></li>
-          <li class="sidemenu__item" @click="isOpen = false"><a href="#works-vue" >Works</a></li>
+          <li class="sidemenu__item">
+            <a href="#">Works</a>
+            <ul>
+              <li><a class="sub-item" href="#works-layout" @click="isOpen = false">- Layout</a></li>
+              <li><a class="sub-item" href="#works-vue" @click="isOpen = false">- Vue</a></li>
+              <li><a class="sub-item" href="#works-react" @click="isOpen = false">- React</a></li>
+              </ul>
+            </li>
         </ul>
       </div>
     </nav>
