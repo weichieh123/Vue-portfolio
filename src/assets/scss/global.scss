@@ -9,8 +9,16 @@ $breakpoint_M: 768px;
 $breakpoint_S: 576px;
 
 $color_Blue: #4f85a5;
+$color_DarkBlue: #3a657e;
+$color_DarkBlueOpa: #3a657eb8;
 $color_White: #fff;
 
+%title {
+    margin: 0;
+    padding: 20px;
+    color: #eee;
+    font-size: 46px;
+}
 
 
 @mixin size_XL {
