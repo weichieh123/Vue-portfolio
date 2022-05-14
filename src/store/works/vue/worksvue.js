@@ -2,7 +2,8 @@ const worksVue = [
   {
     id: 1,
     title: 'Bus Route App',
-    img: '@/assets/Works/Vue-BusApp.png',
+    img: 'Vue-BusApp-desktop.png',
+    mobileImg: 'Vue-BusApp-mobile.png',
     link: 'https://weichieh123.github.io/Open-API/#/bus-line',
     tags: ['Vue3', 'Open API', 'Axios', 'Leaflet'],
     rwd: true,
@@ -11,7 +12,8 @@ const worksVue = [
   {
     id: 2,
     title: 'Covid19 Test App',
-    img: '@/assets/Works/Vue-Covid19TestApp.png',
+    img: 'Vue-Covid19TestApp-desktop.png',
+    mobileImg: 'Vue-Covid19TestApp-mobile.png',
     link: 'https://weichieh123.github.io/covid19-test-app/',
     tags: ['Vue3', 'Open Data', 'Axios', 'Leaflet'],
     rwd: true,
@@ -20,7 +22,8 @@ const worksVue = [
   {
     id: 3,
     title: 'Todo App',
-    img: '@/assets/Works/Vue-TodoApp.png',
+    img: 'Vue-TodoApp-desktop.png',
+    mobileImg: '',
     link: 'https://weichieh123.github.io/Vue-TodoApp/',
     tags: ['Vue2'],
     rwd: false,
