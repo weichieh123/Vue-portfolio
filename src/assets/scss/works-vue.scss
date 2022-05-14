@@ -8,11 +8,11 @@
     .wrap {
       width: fit-content;
       display: flex;
-      height: 350px;
+      height: calc(100vh - #{$navHeight} - 100px);
       padding-right: 50px;
       .card {
         width: 700px;
-        height: 100%;
+        height: 350px;
         margin-left: 40px;
         background-color: #fff;
         display: flex;
