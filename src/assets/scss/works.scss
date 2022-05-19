@@ -73,11 +73,12 @@
             background-color: rgb(53, 93, 133);
             overflow: hidden;
             vertical-align: center;
-            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
             img {
-              position: absolute;
-              height: 120%;
-              top: -10px;
+              display: block;
+              height: 100%;
               transition: 0.5s ease;
               &:hover {
                 transform: scale(1.1);
