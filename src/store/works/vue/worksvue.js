@@ -1,6 +1,5 @@
 const worksVue = [
   {
-    id: 1,
     title: 'Bus Route App',
     img: 'Vue-BusApp-desktop.png',
     mobileImg: 'Vue-BusApp-mobile.png',
@@ -10,7 +9,15 @@ const worksVue = [
     content: '使用Vue3架構，串接Open API，實現公車路線查詢之功能。',
   },
   {
-    id: 2,
+    title: 'FransHals Museum Website',
+    img: 'Vue-FransHals-desktop.png',
+    mobileImg: 'Vue-FransHals-mobile.png',
+    link: 'https://weichieh123.github.io/Vue-FransHalsMuseum/',
+    tags: ['Vue3', 'Layout', 'Scss', 'RWD'],
+    rwd: true,
+    content: '使用Vue3架構，以FransHals Museum網站為參考做切版練習。',
+  },
+  {
     title: 'Covid19 Test App',
     img: 'Vue-Covid19TestApp-desktop.png',
     mobileImg: 'Vue-Covid19TestApp-mobile.png',
@@ -20,7 +27,6 @@ const worksVue = [
     content: '使用Vue3架構，串接下載衛服部之開放式資料，實現快篩試劑庫存查詢之功能。',
   },
   {
-    id: 3,
     title: 'Todo App',
     img: 'Vue-TodoApp-desktop.png',
     mobileImg: '',
