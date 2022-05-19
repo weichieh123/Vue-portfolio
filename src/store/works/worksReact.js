@@ -1,6 +1,5 @@
 const worksReact = [
   {
-    id: 1,
     title: 'Lunar Phase Website',
     img: 'React-LunarPhase-desktop.png',
     mobileImg: '',
@@ -10,9 +9,8 @@ const worksReact = [
     content: '資策會期末專題，以React+Node實作電商網站，負責購物車、歷史訂單、收藏頁與小組整合。',
   },
   {
-    id: 2,
     title: 'Food Order App',
-    img: 'React-FoodOrderApp-desktop.png',
+    img: 'React-FoodOrderApp-desktop.jpg',
     mobileImg: '',
     link: 'https://weichieh123.github.io/FoodOrderApp/',
     tags: ['React', 'useContext', 'useReducer', 'forwardRef', 'Firebase'],
@@ -20,9 +18,8 @@ const worksReact = [
     content: '使用React架構，實現新增、修改、刪除、查詢之功能。',
   },
   {
-    id: 3,
     title: 'E-Commerce Website',
-    img: 'React-ECommerce-desktop.png',
+    img: 'React-ECommerce-desktop.jpg',
     mobileImg: 'React-ECommerce-mobile.png',
     link: 'https://wei-react-ecommerce.netlify.app/',
     tags: ['React', 'Material UI', 'Commerce JS', 'Stripe'],
@@ -30,9 +27,8 @@ const worksReact = [
     content: '使用React架構，搭配Material UI、Commerce.js與Stripe，實現電商網站。',
   },
   {
-    id: 4,
     title: 'Todo App',
-    img: 'React-TodoApp-desktop.png',
+    img: 'React-TodoApp-desktop.jpg',
     mobileImg: '',
     link: 'https://weichieh123.github.io/React-TodoApp-MUI/',
     tags: ['React', 'Material UI'],

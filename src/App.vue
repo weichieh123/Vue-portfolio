@@ -5,6 +5,7 @@
       <Home />
       <About />
       <WorksVue />
+      <WorksReact />
     </div>
   </div>
 </template>
@@ -13,7 +14,8 @@
 import Header from './components/layout/Header.vue';
 import Home from './views/Home.vue';
 import About from './views/About.vue';
-import WorksVue from './views/works/works-vue/WorksVue.vue';
+import WorksVue from './views/works/WorksVue.vue';
+import WorksReact from './views/works/WorksReact.vue';
 </script>
 
 <style lang="scss">

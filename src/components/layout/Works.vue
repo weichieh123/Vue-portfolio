@@ -1,6 +1,6 @@
 <template>
-  <div id="works-vue" class="works-vue">
-    <h2>Works</h2>
+  <div class="works">
+    <h2>{{ title }}</h2>
     <div class="scroll-section" v-dragscroll="true">
       <div class="wrap">
         <div class="card" v-for="(work, i) in works" :key="i">
@@ -18,12 +18,12 @@
           </div>
           <div class="right">
             <img
-              :src="require('@/assets/Works/Vue/' + work.img)"
+              :src="require('@/assets/Works/'+ path + work.img)"
               :alt="work.img"
             />
             <div v-if="work.rwd" class="mobile">
               <img
-                :src="require('@/assets/Works/Vue/' + work.mobileImg)"
+                :src="require('@/assets/Works/'+ path + work.mobileImg)"
                 alt=""
               />
             </div>
@@ -38,11 +38,23 @@
 </template>
 
 <script setup>
-import works from '@/store/works/worksVue';
-// import mockup from '../../../assets/Works/Covid19TestApp_iPhone7 (2).png';
-// import desktop from '@/assets/Works/Vue/Vue-BusApp-desktop.png';
+import { defineProps, toRefs } from 'vue';
+
+const props = defineProps({
+  title: {
+    type: String,
+  },
+  works: {
+    type: String,
+  },
+  path: {
+    type: String,
+  },
+});
+
+const { title, works, path } = toRefs(props);
 </script>
 
 <style lang="scss" scoped>
-@import '@/assets/scss/works-vue.scss';
+@import '@/assets/scss/works.scss';
 </style>
