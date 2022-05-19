@@ -38,7 +38,7 @@
 </template>
 
 <script setup>
-import works from '@/store/works/vue/worksvue';
+import works from '@/store/works/worksVue';
 // import mockup from '../../../assets/Works/Covid19TestApp_iPhone7 (2).png';
 // import desktop from '@/assets/Works/Vue/Vue-BusApp-desktop.png';
 </script>
