@@ -178,6 +178,16 @@
           }
         }
       }
+      @include size_S {
+        margin: 0 auto;
+        padding: 0;
+        flex-direction: column;
+        width: fit-content;
+        height: fit-content;
+        .card {
+          margin: 0 0 60px 0;
+        }
+      }
     }
   }
 }
