@@ -12,8 +12,8 @@
               <el-icon><Platform /></el-icon>
               <el-icon v-if="work.rwd"><Iphone /></el-icon>
             </div>
-            <div class="tags" v-for="(tag, i) in work.tags" :key="'tag' + i">
-              <span># {{ tag }}</span>
+            <div class="tags">
+              <span v-for="(tag, i) in work.tags" :key="'tag' + i"># {{ tag }}</span>
             </div>
           </div>
           <div class="right">

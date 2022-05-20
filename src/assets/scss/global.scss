@@ -2,7 +2,7 @@
 
 $color_Blue: #4f85a5;
 $color_DarkBlue: #3a657e;
-$color_DarkBlueOpa: #3a657eb8;
+$color_LightBlue: #7092a7;
 $color_White: #fff;
 
 $navHeight: 70px;
@@ -84,7 +84,7 @@ $card-content-font-sizes: (
     @include font-size($card-title-font-sizes);
   }
   .content {
-      @include font-size($card-content-font-sizes);
+    @include font-size($card-content-font-sizes);
   }
 }
 

@@ -6,7 +6,7 @@ const worksReact = [
     link: 'https://github.com/weichieh123/Lunar_Phase_React',
     tags: ['React', 'Node', 'MySql', 'Fetch'],
     rwd: false,
-    content: '資策會期末專題，以React+Node實作電商網站，負責購物車、歷史訂單、收藏頁與小組整合。',
+    content: '以React+Node實作電商網站(負責購物車、歷史訂單、收藏頁與團隊整合)。',
   },
   {
     title: 'Food Order App',
