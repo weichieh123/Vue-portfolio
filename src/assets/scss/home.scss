@@ -7,8 +7,8 @@
       width: 500px;
       top: calc(50vh - #{$navHeight}/2);
       left: calc(50vw - 250px);
-      font-size: 40px;
       color: #fff;
+      text-align: center;
     }
     :deep(.el-carousel__container){
       width: 100vw;

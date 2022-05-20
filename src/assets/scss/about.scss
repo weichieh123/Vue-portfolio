@@ -4,7 +4,11 @@
     h2 {
         @extend %title
     }
-    :deep(.el-timeline-item__timestamp){
-        color: #eee;
+    :deep(.el-timeline){
+        width: fit-content;
+        margin-left: 5vw;
+        &-item__timestamp {
+            color: #eee;
+        }
     }
 }

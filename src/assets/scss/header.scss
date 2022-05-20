@@ -2,6 +2,7 @@
     position: fixed;
     background-color: $color_White;
     width: 100vw;
+    box-sizing: border-box;
     height: $navHeight;
     display: flex;
     flex-wrap: wrap;
@@ -10,16 +11,23 @@
     top: 0;
     left: 0;
     z-index: 999;
+    padding: 0 35px;
+    @include size_M {
+      padding: 0 20px;
+    }
     .logo {
       color: $color_Blue;
-      margin-left: 40px;
       line-height: $navHeight;
-      font-size: 32px;
       font-weight: 500;
       cursor: pointer;
+      span {
+        @include size_S {
+          display: none;
+        }
+      }
     }
     .sidemenu {
-      margin-right: 30px;
+      // margin-right: 30px;
       &__btn {
         display: block;
         width: 50px;

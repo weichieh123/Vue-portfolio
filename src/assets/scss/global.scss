@@ -1,43 +1,118 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-$navHeight: 70px;
-$menuWidth: 250px;
-
-$breakpoint_XL: 1200px;
-$breakpoint_L: 992px;
-$breakpoint_M: 768px;
-$breakpoint_S: 576px;
-
 $color_Blue: #4f85a5;
 $color_DarkBlue: #3a657e;
 $color_DarkBlueOpa: #3a657eb8;
 $color_White: #fff;
 
-%title {
-    margin: 0;
-    padding: 30px 25px;
-    color: #eee;
-    font-size: 46px;
+$navHeight: 70px;
+$menuWidth: 250px;
+
+$breakpoint_XS: 480px;
+$breakpoint_S: 576px;
+$breakpoint_M: 768px;
+$breakpoint_L: 992px;
+$breakpoint_XL: 1200px;
+
+$breakpoints: (
+  xsmall: $breakpoint_XS,
+  small: $breakpoint_S,
+  medium: $breakpoint_M,
+  large: $breakpoint_L,
+  xlarge: $breakpoint_XL,
+);
+
+@mixin font-size($fs-map) {
+  @each $fs-breakpoint, $fs-font-size in $fs-map {
+    @if $fs-breakpoint == null {
+      font-size: $fs-font-size;
+    } @else {
+      @media screen and (min-width: $fs-breakpoint) {
+        font-size: $fs-font-size;
+      }
+    }
+  }
+}
+$header-logo-font-sizes: (
+  null: 28px,
+  $breakpoint_XS: 28px,
+  $breakpoint_S: 28px,
+  $breakpoint_M: 30px,
+  $breakpoint_L: 32px,
+  $breakpoint_XL: 32px,
+);
+$home-title-font-sizes: (
+  null: 24px,
+  $breakpoint_XS: 24px,
+  $breakpoint_S: 28px,
+  $breakpoint_M: 32px,
+  $breakpoint_L: 36px,
+  $breakpoint_XL: 40px,
+);
+$page-title-font-sizes: (
+  null: 34px,
+  $breakpoint_XS: 34px,
+  $breakpoint_S: 36px,
+  $breakpoint_M: 40px,
+  $breakpoint_L: 44px,
+  $breakpoint_XL: 46px,
+);
+$card-title-font-sizes: (
+  null: 22px,
+  $breakpoint_XS: 22px,
+  $breakpoint_S: 24px,
+  $breakpoint_M: 26px,
+  $breakpoint_L: 28px,
+  $breakpoint_XL: 30px,
+);
+$card-content-font-sizes: (
+  null: 13px,
+  $breakpoint_XS: 13px,
+  $breakpoint_S: 14px,
+  $breakpoint_M: 14px,
+  $breakpoint_L: 15px,
+  $breakpoint_XL: 16px,
+);
+.header .logo {
+  @include font-size($header-logo-font-sizes);
+}
+.home .title {
+  @include font-size($home-title-font-sizes);
+}
+.card {
+  .title {
+    @include font-size($card-title-font-sizes);
+  }
+  .content {
+      @include font-size($card-content-font-sizes);
+  }
 }
 
+%title {
+  margin: 0;
+  padding: 30px 25px;
+  color: #eee;
+  font-size: 46px;
+  @include font-size($page-title-font-sizes);
+}
 
 @mixin size_XL {
-    @media (max-width:$breakpoint_XL){
-        @content;
-    }
+  @media (max-width: $breakpoint_XL) {
+    @content;
+  }
 }
 @mixin size_L {
-    @media (max-width:$breakpoint_L){
-        @content;
-    }
+  @media (max-width: $breakpoint_L) {
+    @content;
+  }
 }
 @mixin size_M {
-    @media (max-width:$breakpoint_M){
-        @content;
-    }
+  @media (max-width: $breakpoint_M) {
+    @content;
+  }
 }
 @mixin size_S {
-    @media (max-width:$breakpoint_S){
-        @content;
-    }
+  @media (max-width: $breakpoint_S) {
+    @content;
+  }
 }

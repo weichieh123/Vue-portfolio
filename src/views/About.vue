@@ -3,7 +3,7 @@
     <h2>Experience</h2>
     <el-timeline>
       <el-timeline-item timestamp="2012/9 - 2016/6" placement="top">
-      國立清華大學電機工程學系、攝影社社長(2015年)
+      國立清華大學電機工程學系<br />攝影社社長(2015年)
     </el-timeline-item>
     <el-timeline-item timestamp="2017/12 - 2020/11" placement="top">
       電子工程師
