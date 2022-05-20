@@ -15,6 +15,7 @@
             <div class="tags">
               <span v-for="(tag, i) in work.tags" :key="'tag' + i"># {{ tag }}</span>
             </div>
+            <small class="content-mobile">{{ work.content }}</small>
           </div>
           <div class="right">
             <img
