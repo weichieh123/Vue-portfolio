@@ -58,20 +58,28 @@ $page-title-font-sizes: (
   $breakpoint_XL: 46px,
 );
 $card-title-font-sizes: (
-  null: 22px,
-  $breakpoint_XS: 22px,
+  null: 20px,
+  $breakpoint_XS: 20px,
   $breakpoint_S: 24px,
   $breakpoint_M: 26px,
   $breakpoint_L: 28px,
   $breakpoint_XL: 30px,
 );
 $card-content-font-sizes: (
-  null: 13px,
-  $breakpoint_XS: 13px,
-  $breakpoint_S: 14px,
-  $breakpoint_M: 14px,
+  null: 11px,
+  $breakpoint_XS: 11px,
+  $breakpoint_S: 12px,
+  $breakpoint_M: 13px,
   $breakpoint_L: 15px,
   $breakpoint_XL: 16px,
+);
+$card-tags-font-sizes: (
+  null: 12px,
+  $breakpoint_XS: 12px,
+  $breakpoint_S: 13px,
+  $breakpoint_M: 13px,
+  $breakpoint_L: 14px,
+  $breakpoint_XL: 14px,
 );
 .header .logo {
   @include font-size($header-logo-font-sizes);
@@ -85,6 +93,9 @@ $card-content-font-sizes: (
   }
   .content {
     @include font-size($card-content-font-sizes);
+  }
+  .tags {
+    @include font-size($card-tags-font-sizes);
   }
 }
 
@@ -117,7 +128,7 @@ $card-content-font-sizes: (
   }
 }
 @mixin size_XS {
-    @media (max-width: $breakpoint_XS) {
-      @content;
-    }
+  @media (max-width: $breakpoint_XS) {
+    @content;
   }
+}

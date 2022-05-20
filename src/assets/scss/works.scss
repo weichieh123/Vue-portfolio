@@ -62,7 +62,6 @@
           .tags {
             margin: 20px;
             color: #eee;
-            font-size: 14px;
             font-style: italic;
             span {
               display: block;
@@ -145,10 +144,19 @@
           .content {
             display: block;
             z-index: 9;
+            // padding: 0 5px;
+            &.isLong {
+              height: 52px;
+              line-height: 26px;
+              padding: 0 15px;
+            }
           }
           &:hover {
             .content {
               margin-bottom: -40px;
+              &.isLong {
+                margin-bottom: -52px;
+              }
             }
           }
         }
@@ -158,6 +166,15 @@
           .mobile {
             width: 90px;
             height: 220px;
+          }
+        }
+        @include size_XS {
+          width: 350px;
+          height: 300px;
+          .mobile {
+            width: 80px;
+            height: 190px;
+            margin-bottom: 40px;
           }
         }
       }

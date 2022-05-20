@@ -28,7 +28,7 @@
               />
             </div>
           </div>
-          <div class="content">
+          <div class="content" :class="{isLong: work.isLong}">
             <span>{{ work.content }}</span>
           </div>
         </div>

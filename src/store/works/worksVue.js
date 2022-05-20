@@ -7,15 +7,17 @@ const worksVue = [
     tags: ['Vue3', 'Open API', 'Axios', 'Leaflet'],
     rwd: true,
     content: '使用Vue3架構，串接Open API，實現公車路線查詢之功能。',
+    isLong: false,
   },
   {
-    title: 'FransHals Museum Website',
+    title: 'FransHals Museum',
     img: 'Vue-FransHals-desktop.png',
     mobileImg: 'Vue-FransHals-mobile.png',
     link: 'https://weichieh123.github.io/Vue-FransHalsMuseum/',
     tags: ['Vue3', 'Layout', 'Scss', 'RWD'],
     rwd: true,
     content: '使用Vue3架構，以FransHals Museum網站為參考做切版練習。',
+    isLong: true,
   },
   {
     title: 'Covid19 Test App',
@@ -25,6 +27,7 @@ const worksVue = [
     tags: ['Vue3', 'Open Data', 'Axios', 'Leaflet'],
     rwd: true,
     content: '使用Vue3架構，串接下載衛服部之開放式資料，實現快篩試劑庫存查詢之功能。',
+    isLong: true,
   },
   {
     title: 'Todo App',
