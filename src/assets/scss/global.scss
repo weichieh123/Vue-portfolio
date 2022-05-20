@@ -116,3 +116,8 @@ $card-content-font-sizes: (
     @content;
   }
 }
+@mixin size_XS {
+    @media (max-width: $breakpoint_XS) {
+      @content;
+    }
+  }

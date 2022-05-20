@@ -138,6 +138,8 @@
             .mobile {
               // display: none;
               z-index: 99;
+              width: 110px;
+              height: 250px;
             }
           }
           .content {
@@ -148,6 +150,14 @@
             .content {
               margin-bottom: -40px;
             }
+          }
+        }
+        @include size_S {
+          width: 400px;
+          height: 350px;
+          .mobile {
+            width: 90px;
+            height: 220px;
           }
         }
       }
