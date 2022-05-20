@@ -4,6 +4,7 @@
     <div class="section">
       <Home />
       <About />
+      <WorksLayout />
       <WorksVue />
       <WorksReact />
     </div>
@@ -14,6 +15,7 @@
 import Header from './components/layout/Header.vue';
 import Home from './views/Home.vue';
 import About from './views/About.vue';
+import WorksLayout from './views/works/WorksLayout.vue';
 import WorksVue from './views/works/WorksVue.vue';
 import WorksReact from './views/works/WorksReact.vue';
 </script>
