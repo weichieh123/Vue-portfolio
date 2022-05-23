@@ -46,11 +46,9 @@ html {
     > * {
       /* section裡面的所有元件 */
       width: 100vw;
-      min-height: calc(100vh - #{$navHeight});
+      min-height: 550px;
+      // min-height: calc(100vh - #{$navHeight});
       // scroll-snap-align: start;
-      @include size_M {
-        min-height: fit-content;
-      }
     }
   }
 }

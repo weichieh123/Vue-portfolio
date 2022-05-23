@@ -8,6 +8,7 @@ $color_White: #fff;
 $navHeight: 70px;
 $menuWidth: 250px;
 
+$breakpoint_XXS: 340px;
 $breakpoint_XS: 480px;
 $breakpoint_S: 576px;
 $breakpoint_M: 768px;
@@ -129,6 +130,11 @@ $card-tags-font-sizes: (
 }
 @mixin size_XS {
   @media (max-width: $breakpoint_XS) {
+    @content;
+  }
+}
+@mixin size_XXS {
+  @media (max-width: $breakpoint_XXS) {
     @content;
   }
 }
