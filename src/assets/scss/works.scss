@@ -53,6 +53,15 @@
             margin-left: 10px;
             font-size: 20px;
             color: $color_White;
+            @include size_M {
+              font-size: 17px;
+            }
+            @include size_S {
+              font-size: 15px;
+            }
+            @include size_XS {
+              font-size: 13px;
+            }
             i {
               margin-left: 10px;
               padding: 5px;
