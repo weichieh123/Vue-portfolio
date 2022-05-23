@@ -1,5 +1,6 @@
 .works {
   background-color: #89b6a8;
+  min-height: 500px;
   h2 {
     @extend %title;
   }
