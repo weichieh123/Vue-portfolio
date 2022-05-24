@@ -46,6 +46,7 @@ html {
     > * {
       /* section裡面的所有元件 */
       width: 100vw;
+      overflow-x: hidden;
       // min-height: calc(100vh - #{$navHeight});
       // scroll-snap-align: start;
     }
