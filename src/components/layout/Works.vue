@@ -2,7 +2,6 @@
   <div class="works" v-dragscroll="{ target: '.scroll-section' , active: !isMobile }">
     <h2>{{ title }}</h2>
     <div class="scroll-section" >
-      <!-- :v-dragscroll="!isMobile" -->
       <div class="wrap">
         <div class="card" v-for="(work, i) in works" :key="i">
           <h4 class="title">
@@ -59,10 +58,19 @@ const props = defineProps({
 const { title, works, path } = toRefs(props);
 
 const isMobile = computed(() => {
-  const ifIsMobile = window.matchMedia('only screen and (max-width: 768px)');
+  const ifIsMobile = window.matchMedia('only screen and (max-width: 576px)');
   console.log('mobile??', ifIsMobile.matches);
   return ifIsMobile.matches;
 });
+
+// const calcMobile = () => {
+//   const ifIsMobile = window.matchMedia('only screen and (max-width: 768px)');
+//   console.log('mobile??', ifIsMobile.matches);
+//   return ifIsMobile.matches;
+// };
+// onMounted(() => {
+//   window.addEventListener('resize', () => calcMobile());
+// });
 </script>
 
 <style lang="scss" scoped>
