@@ -1,6 +1,7 @@
 
 .about {
     background-color: lightcoral;
+    min-height: calc(100vh - #{$navHeight});
     h2 {
         @extend %title
     }
