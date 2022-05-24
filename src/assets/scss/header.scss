@@ -72,6 +72,12 @@
       }
       &__wrap {
         margin-top: 130px;
+        @include size_M {
+          margin-top: 110px;
+        }
+        @include size_S {
+          margin-top: 80px;
+        }
       }
   
       &__list {
@@ -93,19 +99,9 @@
         }
         a {
             text-decoration: none;
-            line-height: 1.6em;
-            font-size: 1.6em;
-            padding: 0.5em 1.5rem;
             display: block;
             color: $color_Blue;
             transition: 0.1s ease;
-            // width: 130px;
-            &.sub-item {
-              // width: 95px;
-              line-height: 1.4em;
-            font-size: 1.4em;
-            }
-
             &:hover {
             // background: #f2f491;
             // color: dimgrey;

@@ -34,6 +34,37 @@ $breakpoints: (
     }
   }
 }
+@mixin nav-font-size($fs-map) {
+  @each $fs-breakpoint, $fs-font-size in $fs-map {
+    @if $fs-breakpoint == null {
+      font-size: $fs-font-size;
+      line-height: $fs-font-size;
+      padding: $fs-font-size/1.5 $fs-font-size;
+    } @else {
+      @media screen and (min-width: $fs-breakpoint) {
+        font-size: $fs-font-size;
+        line-height: $fs-font-size;
+        padding: $fs-font-size/1.5 $fs-font-size;
+      }
+    }
+  }
+}
+$nav-menu-font-sizes: (
+  null: 20px,
+  $breakpoint_XS: 20px,
+  $breakpoint_S: 22px,
+  $breakpoint_M: 24px,
+  $breakpoint_L: 26px,
+  $breakpoint_XL: 28px,
+);
+$nav-submenu-font-sizes: (
+  null: 18px,
+  $breakpoint_XS: 18px,
+  $breakpoint_S: 20px,
+  $breakpoint_M: 23px,
+  $breakpoint_L: 24px,
+  $breakpoint_XL: 26px,
+);
 $header-logo-font-sizes: (
   null: 28px,
   $breakpoint_XS: 28px,
@@ -82,9 +113,19 @@ $card-tags-font-sizes: (
   $breakpoint_L: 14px,
   $breakpoint_XL: 14px,
 );
-.header .logo {
-  @include font-size($header-logo-font-sizes);
-}
+.header{
+  .logo {
+    @include font-size($header-logo-font-sizes);
+  }
+  nav {
+    .sidemenu__item a {
+      @include nav-font-size($nav-menu-font-sizes);
+      &.sub-item {
+        @include nav-font-size($nav-submenu-font-sizes);
+      }
+    }
+  }
+} 
 .home .title {
   @include font-size($home-title-font-sizes);
 }
