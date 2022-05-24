@@ -1,15 +1,19 @@
 
 .about {
-    background-color: lightcoral;
+    background-color: $color_about_bg;
     min-height: calc(100vh - #{$navHeight});
     h2 {
-        @extend %title
+        @extend %title;
+        color: $color_about_page_title;
     }
     :deep(.el-timeline){
         width: fit-content;
         margin-left: 5vw;
         &-item__timestamp {
-            color: #eee;
+            color: $color_about_timestamp;
+        }
+        &-item__content {
+            color: $color_about_content;
         }
     }
 }

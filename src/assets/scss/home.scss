@@ -8,7 +8,7 @@
       width: 500px;
       top: calc(50vh - #{$navHeight}/2);
       left: calc(50vw - 250px);
-      color: #fff;
+      color: $color_home_title;
       text-align: center;
     }
     :deep(.el-carousel__container){

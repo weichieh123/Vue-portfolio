@@ -1,5 +1,4 @@
 .works {
-  background-color: #89b6a8;
   min-height: 500px;
   h2 {
     @extend %title;
@@ -16,7 +15,7 @@
         width: 700px;
         height: 350px;
         margin-left: 40px;
-        background-color: #fff;
+        background-color: $color_all_card_bg;
         display: flex;
         position: relative;
         transition: all 1s ease;
@@ -40,9 +39,9 @@
           box-sizing: border-box;
           // font-size: 30px;
           z-index: 99;
-          background-color: $color_DarkBlue;
+          // background-color: $color_vue_card_title_bg;
           a {
-            color: $color_White;
+            // color: $color_vue_card_title;
             text-decoration: none;
             &:hover {
               text-decoration: underline;
@@ -54,12 +53,12 @@
         }
         .left {
           flex: 2;
-          background-color: $color_LightBlue;
+          // background-color: $color_vue_card_left_bg;
           .icons {
             margin-top: 70px;
             margin-left: 10px;
             font-size: 20px;
-            color: $color_White;
+            // color: $color_vue_card_left_icons;
             @include size_M {
               font-size: 17px;
             }
@@ -72,13 +71,13 @@
             i {
               margin-left: 10px;
               padding: 5px;
-              border: 1px solid $color_White;
+              border: 1px solid;
               border-radius: 100%;
             }
           }
           .tags {
             margin: 20px;
-            color: #eee;
+            // color: $color_vue_card_left_tags;
             font-style: italic;
             span {
               display: block;
@@ -88,14 +87,13 @@
           small {
             margin: 0 20px 5px;
             font-size: 12px;
-            color: #eee;
+            // color: $color_vue_card_left_small;
             font-style: italic;
             display: none;
           }
         }
         .right {
           flex: 8;
-          background-color: rgb(53, 93, 133);
           overflow: hidden;
           vertical-align: center;
           display: flex;
@@ -128,7 +126,7 @@
         }
         .content {
           display: none;
-          background-color: rgba(255, 255, 255, 0.686);
+          background-color: $color_all_card_content_bg;
           width: 100%;
           height: 40px;
           line-height: 40px;
@@ -235,15 +233,84 @@
     }
   }
 }
-.works-react {
-  background-color: rgb(235, 214, 170);
+.works-vue {
+  background-color: $color_vue_bg;
   h2 {
-    color: #4e725f;
+    color: $color_vue_page_title;
+  }
+  .card {
+    .title {
+      background-color: $color_vue_card_title_bg;
+      a {
+        color: $color_vue_card_title;
+      }
+    }
+    .left {
+      background-color: $color_vue_card_left_bg;
+      .icons  {
+        color: $color_vue_card_left_icons;
+        border-color: $color_vue_card_left_icons;
+      }
+      .tags {
+        color: $color_vue_card_left_tags;
+      }
+      small {
+        color: $color_vue_card_left_small;
+      }
+    }
+  }
+}
+.works-react {
+  background-color: $color_react_bg;
+  h2 {
+    color: $color_react_page_title;
+  }
+  .card {
+    .title {
+      background-color: $color_react_card_title_bg;
+      a {
+        color: $color_react_card_title;
+      }
+    }
+    .left {
+      background-color: $color_react_card_left_bg;
+      .icons  {
+        color: $color_react_card_left_icons;
+        border-color: $color_react_card_left_icons;
+      }
+      .tags {
+        color: $color_react_card_left_tags;
+      }
+      small {
+        color: $color_react_card_left_small;
+      }
+    }
   }
 }
 .works-layout {
-  background-color: rgb(198, 230, 154);
+  background-color: $color_layout_bg;
   h2 {
-    color: #765934;
+    color: $color_layout_page_title;
+  }
+  .card {
+    .title {
+      background-color: $color_layout_card_title_bg;
+      a {
+        color: $color_layout_card_title;
+      }
+    }
+    .left {
+      background-color: $color_layout_card_left_bg;
+      .icons  {
+        color: $color_layout_card_left_icons;
+        border-color: $color_layout_card_left_icons;
+      }
+      .tags {
+        color: $color_layout_card_left_tags;
+      }
+      small {
+        color: $color_layout_card_left_small;
+      }
+    }
   }
 }

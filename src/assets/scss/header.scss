@@ -1,6 +1,6 @@
 .header {
     position: fixed;
-    background-color: $color_White;
+    background-color: $color_header_bg;
     width: 100vw;
     box-sizing: border-box;
     height: $navHeight;
@@ -16,7 +16,7 @@
       padding: 0 20px;
     }
     .logo {
-      color: $color_Blue;
+      color: $color_header_logo;
       line-height: $navHeight;
       font-weight: 500;
       cursor: pointer;
@@ -100,7 +100,7 @@
         a {
             text-decoration: none;
             display: block;
-            color: $color_Blue;
+            color: $color_header_menu;
             transition: 0.1s ease;
             &:hover {
             // background: #f2f491;
@@ -113,7 +113,7 @@
     nav {
         width: $menuWidth;
         height: 100vh;
-        background-color: $color_White;
+        background-color: $color_header_menu_bg;
         position: fixed;
         top: 0;
         right: -$menuWidth;

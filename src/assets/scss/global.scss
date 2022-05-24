@@ -5,6 +5,52 @@ $color_DarkBlue: #3a657e;
 $color_LightBlue: #7092a7;
 $color_White: #fff;
 
+
+/* header */
+$color_header_bg: #fff;
+$color_header_logo: $color_Blue;
+$color_header_menu: $color_Blue;
+$color_header_menu_bg: #fff;
+/* home */
+$color_home_title: #fff;
+/* about */
+$color_about_bg: lightcoral;
+$color_about_page_title: #eee;
+$color_about_timestamp: #eee;
+$color_about_content:#5d4f4f;
+
+/* works 共用顏色 */
+$color_all_card_bg: $color_White; // card背景色(看不見，可不調)
+$color_all_card_content_bg: rgba(255, 255, 255, 0.686); // card下方說明背景色
+/* works-vue */
+$color_vue_bg: #89b6a8;
+$color_vue_page_title: #eee;
+$color_vue_card_title: $color_White; // card標題
+$color_vue_card_title_bg: $color_DarkBlue; // card標題背景色
+$color_vue_card_left_bg: $color_LightBlue; // card左邊背景色
+$color_vue_card_left_icons: $color_White; // card左邊icons
+$color_vue_card_left_tags: #eee; // card左邊tags
+$color_vue_card_left_small: #eee; // card左邊說明
+/* works-react */
+$color_react_bg: rgb(235, 214, 170);
+$color_react_page_title: #4e725f;
+$color_react_card_title: #fff; // card標題
+$color_react_card_title_bg: #3a657e; // card標題背景色
+$color_react_card_left_bg: #7092a7; // card左邊背景色
+$color_react_card_left_icons: #fff; // card左邊icons
+$color_react_card_left_tags: #eee; // card左邊tags
+$color_react_card_left_small: #eee; // card左邊說明
+/* works-layout */
+$color_layout_bg: rgb(198, 230, 154);
+$color_layout_page_title: #8b7960;
+$color_layout_card_title: #fff; // card標題
+$color_layout_card_title_bg: #3a657e; // card標題背景色
+$color_layout_card_left_bg: #7092a7; // card左邊背景色
+$color_layout_card_left_icons: #fff; // card左邊icons
+$color_layout_card_left_tags: #eee; // card左邊tags
+$color_layout_card_left_small: #eee; // card左邊說明
+
+
 $navHeight: 70px;
 $menuWidth: 250px;
 
@@ -144,7 +190,6 @@ $card-tags-font-sizes: (
 %title {
   margin: 0;
   padding: 30px 25px;
-  color: #eee;
   font-size: 46px;
   @include font-size($page-title-font-sizes);
 }
