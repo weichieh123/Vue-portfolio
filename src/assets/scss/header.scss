@@ -12,14 +12,21 @@
     left: 0;
     z-index: 999;
     padding: 0 35px;
+    transition: 0.4s ease;
     @include size_M {
       padding: 0 20px;
+    }
+    &.active {
+      background-color: $color_header_active_bg;
     }
     .logo {
       color: $color_header_logo;
       line-height: $navHeight;
       font-weight: 500;
       cursor: pointer;
+      &.active {
+        color: $color_header_active_logo;
+      }
       span {
         @include size_S {
           display: none;
@@ -29,6 +36,7 @@
     .sidemenu {
       // margin-right: 30px;
       &__btn {
+        background-color: rgba(255, 255, 255, 0);
         display: block;
         width: 50px;
         height: 50px;
@@ -39,7 +47,7 @@
         cursor: pointer;
         outline: none;
         span {
-          background: $color_Blue;
+          background: $color_header_hamburger;
           display: block;
           width: 20px;
           height: 2px;
@@ -60,6 +68,7 @@
         &.active {
           .top {
             transform: rotate(-45deg);
+            background: $color_header_active_hamburger;
           }
           .mid {
             transform: translateX(-20px) rotate(360deg);
@@ -67,16 +76,20 @@
           }
           .bottom {
             transform: rotate(45deg);
+            background: $color_header_active_hamburger;
           }
         }
       }
       &__wrap {
-        margin-top: 130px;
+        margin-top: 60px;
+        @include size_L {
+          margin-top: 50px;
+        }
         @include size_M {
-          margin-top: 110px;
+          margin-top: 40px;
         }
         @include size_S {
-          margin-top: 80px;
+          margin-top: 30px;
         }
       }
   
@@ -107,20 +120,25 @@
             // color: dimgrey;
             font-weight: bold;
             }
+            &.active {
+              color: $color_header_active_menu;
+            }
         }
       }
     }
     nav {
         width: $menuWidth;
-        height: 100vh;
+        height: calc(100vh - #{$navHeight});
         background-color: $color_header_menu_bg;
         position: fixed;
-        top: 0;
+        bottom: 0;
         right: -$menuWidth;
         z-index: 99;
         transition: 0.4s ease;
         &.active {
             right: 0;
+            
+            background-color: $color_header_active_menu_bg;
         }
     }
   }
