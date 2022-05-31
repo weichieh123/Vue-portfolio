@@ -7,7 +7,7 @@
     <div class="sidemenu">
       <button
         class="sidemenu__btn"
-        @click="isOpen = !isOpen"
+        @click="toggleIsOpen"
         :class="{ active: isOpen }"
       >
         <span class="top"></span>
@@ -18,14 +18,14 @@
     <nav :class="{ active: isOpen }">
       <div class="sidemenu__wrap">
         <ul class="sidemenu__list">
-          <li class="sidemenu__item" @click="isOpen = false"><a :class="{ active: isOpen }" href="#home" >Home</a> </li>
-          <li class="sidemenu__item" @click="isOpen = false"><a :class="{ active: isOpen }" href="#about" >About</a></li>
+          <li class="sidemenu__item" @click="toggleIsOpen"><a :class="{ active: isOpen }" href="#home" >Home</a> </li>
+          <li class="sidemenu__item" @click="toggleIsOpen"><a :class="{ active: isOpen }" href="#about" >About</a></li>
           <li class="sidemenu__item">
             <a :class="{ active: isOpen }" href="#">Works</a>
             <ul>
-              <li><a :class="{ active: isOpen }" class="sub-item" href="#works-layout" @click="isOpen = false">- Layout</a></li>
-              <li><a :class="{ active: isOpen }" class="sub-item" href="#works-vue" @click="isOpen = false">- Vue</a></li>
-              <li><a :class="{ active: isOpen }" class="sub-item" href="#works-react" @click="isOpen = false">- React</a></li>
+              <li><a :class="{ active: isOpen }" class="sub-item" href="#works-layout" @click="toggleIsOpen">- Layout</a></li>
+              <li><a :class="{ active: isOpen }" class="sub-item" href="#works-vue" @click="toggleIsOpen">- Vue</a></li>
+              <li><a :class="{ active: isOpen }" class="sub-item" href="#works-react" @click="toggleIsOpen">- React</a></li>
               </ul>
             </li>
         </ul>
@@ -35,9 +35,14 @@
 </template>
 
 <script setup>
-import { ref } from 'vue';
+import { useStore } from 'vuex';
+import { computed } from 'vue';
 
-const isOpen = ref(false);
+const store = useStore();
+const isOpen = computed(() => store.getters.getIsOpen);
+const toggleIsOpen = () => {
+  store.dispatch('toggleIsOpen');
+};
 </script>
 
 <style lang="scss" scoped>
