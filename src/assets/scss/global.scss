@@ -18,7 +18,7 @@ $color_header_active_menu: #eee;
 $color_header_active_menu_bg: #2d496b;
 $color_header_active_hamburger: #eee;
 /* home */
-$color_home_title: #fff;
+$color_home_title: #283e5a;
 /* about */
 $color_about_bg: lightcoral;
 $color_about_page_title: #eee;
@@ -127,11 +127,11 @@ $header-logo-font-sizes: (
 );
 $home-title-font-sizes: (
   null: 24px,
-  $breakpoint_XS: 24px,
-  $breakpoint_S: 28px,
-  $breakpoint_M: 32px,
-  $breakpoint_L: 36px,
-  $breakpoint_XL: 40px,
+  $breakpoint_XS: 36px,
+  $breakpoint_S: 36px,
+  $breakpoint_M: 38px,
+  $breakpoint_L: 40px,
+  $breakpoint_XL: 42px,
 );
 $page-title-font-sizes: (
   null: 34px,

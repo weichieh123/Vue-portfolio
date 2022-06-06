@@ -1,30 +1,138 @@
-
-.home {
-    // background-color: rgb(242, 244, 145);
-    min-height: calc(100vh - #{$navHeight});
-    position: relative;
-    .title {
-      position: absolute;
-      width: 500px;
-      top: calc(50vh - #{$navHeight}/2);
-      left: calc(50vw - 250px);
-      color: $color_home_title;
-      text-align: center;
-    }
-    :deep(.el-carousel__container){
-      width: 100vw;
-      height: calc(100vh - #{$navHeight});
-      margin: 0 auto;
-      display: flex; // 圖片置中
-      align-items: center;
-      
-      img {
-        // 圖片滿版
-        width: 100%;
-        height: 100%;
-        max-width: 100%;
-        max-height: 100%;
-        object-fit: cover;
+@mixin pic-position($pic-map, $direction, $isOffset) {
+  @each $pic-breakpoint, $pic in $pic-map {
+    
+    @if ($direction == top) {
+      @if ($pic-breakpoint == null) {
+        @if ($isOffset == 1) {
+          top: calc(#{map-get($pic, top)} + #{map-get($pic, top-offset)});
+        } @else {
+          top: calc(#{map-get($pic, top)});
+        }
+      } @else {
+        @media screen and (min-width: $pic-breakpoint) {
+          @if ($isOffset == 1) {
+            top: calc(#{map-get($pic, top)} + #{map-get($pic, top-offset)});
+          } @else {
+            top: calc(#{map-get($pic, top)});
+          }
+        }
+      }
+    } @else {
+      @if ($pic-breakpoint == null) {
+        @if ($isOffset == 1) {
+          right: calc(#{map-get($pic, right)} + #{map-get($pic, right-offset)});
+        } @else {
+          right: calc(#{map-get($pic, right)});
+        }
+        
+      } @else {
+        @media screen and (min-width: $pic-breakpoint) {
+          @if ($isOffset == 1) {
+            right: calc(#{map-get($pic, right)} + #{map-get($pic, right-offset)});
+          } @else {
+            right: calc(#{map-get($pic, right)});
+          }
+        }
       }
     }
   }
+}
+$home-pic-position: (
+  null: (
+    right: 2%,
+    right-offset: 155px,
+    top: 9%,
+    top-offset: 35px,
+  ),
+  $breakpoint_XXS:(
+    right: 4%,
+    right-offset: 180px,
+    top: 9%,
+    top-offset: 35px,
+  ),
+  $breakpoint_XS: (
+    right: 4%,
+    right-offset: 234px,
+    top: 9%,
+    top-offset: 50px,
+  ),
+  $breakpoint_S: (
+    right: 13%,
+    right-offset: 240px,
+    top: 10%,
+    top-offset: 52px,
+  ),
+  $breakpoint_M: (
+    right: 14%,
+    right-offset: 285px,
+    top: 11%,
+    top-offset: 60px,
+  ),
+  $breakpoint_L: (
+    right: 15%,
+    right-offset: 290px,
+    top: 12%,
+    top-offset: 60px,
+  ),
+  $breakpoint_XL: (
+    right: 16%,
+    right-offset: 290px,
+    top: 13%,
+    top-offset: 60px,
+  ),
+);
+
+.home {
+  // background-color: rgb(242, 244, 145);
+  min-height: calc(100vh - #{$navHeight});
+  position: relative;
+  .title {
+    position: absolute;
+    width: 500px;
+    top: 30%;
+    left: 15%;
+    color: $color_home_title;
+    @include size_S {
+      // top: calc(50vh - #{$navHeight}/2);
+      text-align: center;
+      width: 400px;
+      left: calc(50% - 200px);
+    }
+    @include size_XS {
+      width: 360px;
+      left: calc(50% - 180px);
+    }
+    @include size_XXS {
+      width: 280px;
+      left: calc(50% - 140px);
+    }
+  }
+  .pic {
+    width: 260px;
+    height: calc(260px * 1.35);
+    position: absolute;
+    @include size_M {
+      width: 220px;
+      height: calc(220px * 1.35);
+    }
+    @include size_XS {
+      width: 160px;
+      height: calc(160px * 1.35);
+    }
+    @include size_XXS {
+      width: 150px;
+      height: calc(150px * 1.35);
+    }
+    img {
+      width: 100%;
+    }
+    &.left {
+      @include pic-position($home-pic-position, right, 1);
+      @include pic-position($home-pic-position, top, 0);
+    }
+    &.right {
+      @include pic-position($home-pic-position, right, 0);
+      @include pic-position($home-pic-position, top, 1);
+    }
+  }
+}

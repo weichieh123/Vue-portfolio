@@ -1,17 +1,16 @@
 <template>
   <div id="home" class="home">
     <div class="block text-center" m="t-4">
-      <el-carousel trigger="click" indicator-position="none">
-        <el-carousel-item v-for="photo in 16" :key="photo">
-          <img
-            :src="require(`../assets/Photography/photo (${photo}).jpg`)"
-            alt=""
-          />
-        </el-carousel-item>
-      </el-carousel>
-      <div class="title">
-      <VueWriter :array="['a Front-end Developer']" />
+      <div class="pic left">
+        <img :src="require(`../assets/photo-left.jpg`)" alt="" />
       </div>
+      <div class="pic right">
+        <img
+          :src="require(`../assets/photo-right.jpg`)"
+          alt=""
+        />
+      </div>
+      <div class="title">Front-end Developer</div>
     </div>
   </div>
 </template>
