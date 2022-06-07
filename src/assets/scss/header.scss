@@ -27,11 +27,11 @@
       &.active {
         color: $color_header_active_logo;
       }
-      span {
-        @include size_S {
-          display: none;
-        }
-      }
+      // span {
+      //   @include size_S {
+      //     display: none;
+      //   }
+      // }
     }
     .sidemenu {
       // margin-right: 30px;

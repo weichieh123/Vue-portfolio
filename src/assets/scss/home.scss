@@ -86,6 +86,9 @@ $home-pic-position: (
   // background-color: rgb(242, 244, 145);
   min-height: 550px;
   position: relative;
+  @include size_S {
+    min-height: 410px;
+  }
   .title {
     position: absolute;
     width: 500px;

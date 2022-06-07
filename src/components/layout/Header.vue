@@ -2,7 +2,7 @@
   <div class="header" :class="{ active: isOpen }">
     <div class="logo" :class="{ active: isOpen }">
       <el-icon><video-camera-filled /></el-icon>
-      <span> Weichieh</span>
+      <!-- <span> Weichieh</span> -->
     </div>
     <div class="sidemenu">
       <button
