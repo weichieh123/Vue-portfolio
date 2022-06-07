@@ -1,4 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+// * {
+//   outline: 1px solid red;
+// }
 
 $color_Blue: #4f85a5;
 $color_DarkBlue: #3a657e;
@@ -20,10 +23,13 @@ $color_header_active_hamburger: #eee;
 /* home */
 $color_home_title: #283e5a;
 /* about */
-$color_about_bg: lightcoral;
-$color_about_page_title: #eee;
-$color_about_timestamp: #eee;
-$color_about_content:#5d4f4f;
+$color_about_bg: #F8DBBD;
+$color_about_page_title: #283e5a;
+$color_about_block_title: #283e5a;
+$color_about_intro: #283e5a;
+$color_about_timestamp: #283e5a;
+$color_about_timenode: #283e5a;
+$color_about_content:#283e5a;
 
 /* works 共用顏色 */
 $color_all_card_bg: $color_White; // card背景色(看不見，可不調)
@@ -133,13 +139,21 @@ $home-title-font-sizes: (
   $breakpoint_L: 40px,
   $breakpoint_XL: 42px,
 );
+$about-block-title-font-sizes: (
+  null: 26px,
+  $breakpoint_XS: 26px,
+  $breakpoint_S: 28px,
+  $breakpoint_M: 30px,
+  $breakpoint_L: 32px,
+  $breakpoint_XL: 36px,
+);
 $page-title-font-sizes: (
-  null: 34px,
-  $breakpoint_XS: 34px,
-  $breakpoint_S: 36px,
-  $breakpoint_M: 40px,
-  $breakpoint_L: 44px,
-  $breakpoint_XL: 46px,
+  null: 38px,
+  $breakpoint_XS: 40px,
+  $breakpoint_S: 44px,
+  $breakpoint_M: 48px,
+  $breakpoint_L: 48px,
+  $breakpoint_XL: 50px,
 );
 $card-title-font-sizes: (
   null: 20px,
@@ -181,6 +195,14 @@ $card-tags-font-sizes: (
 .home .title {
   @include font-size($home-title-font-sizes);
 }
+.about {
+  .wrap {
+    h5 {
+      @include font-size($about-block-title-font-sizes
+        );
+    }
+  }
+}
 .card {
   .title {
     @include font-size($card-title-font-sizes);
@@ -196,7 +218,7 @@ $card-tags-font-sizes: (
 %title {
   margin: 0;
   padding: 30px 25px;
-  font-size: 46px;
+  // font-size: 50px;
   @include font-size($page-title-font-sizes);
 }
 

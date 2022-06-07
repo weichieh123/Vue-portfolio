@@ -84,7 +84,7 @@ $home-pic-position: (
 
 .home {
   // background-color: rgb(242, 244, 145);
-  min-height: calc(100vh - #{$navHeight});
+  min-height: 550px;
   position: relative;
   .title {
     position: absolute;
