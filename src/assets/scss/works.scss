@@ -1,5 +1,6 @@
 .works {
   min-height: 500px;
+  // background-size: cover;
   h2 {
     @extend %title;
   }
@@ -20,6 +21,7 @@
         position: relative;
         transition: all 1s ease;
         z-index: 10;
+        box-shadow: 5px 5px 10px #888888;
         &:hover {
           .content {
             display: block;
@@ -262,6 +264,9 @@
 }
 .works-react {
   background-color: $color_react_bg;
+  background-image: url("~@/assets/waves/wave-react-top.svg");
+  background-repeat: no-repeat;
+  background-position: top;
   h2 {
     color: $color_react_page_title;
   }
@@ -289,6 +294,9 @@
 }
 .works-layout {
   background-color: $color_layout_bg;
+  background-image: url("~@/assets/waves/wave-layout-top.svg"), url("~@/assets/waves/wave-layout-bottom.svg");
+  background-repeat: no-repeat;
+  background-position: top, bottom;
   h2 {
     color: $color_layout_page_title;
   }

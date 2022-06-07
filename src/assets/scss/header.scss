@@ -13,6 +13,7 @@
     z-index: 999;
     padding: 0 35px;
     transition: 0.4s ease;
+    box-shadow: 5px 0 5px #ddd;
     @include size_M {
       padding: 0 20px;
     }
