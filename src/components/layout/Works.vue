@@ -37,6 +37,10 @@
         </div>
       </div>
     </div>
+    <div class="notice">
+      <small>scroll</small>
+      <el-icon><Right /></el-icon>
+    </div>
   </div>
 </template>
 

@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-// * {
-//   outline: 1px solid red;
-// }
+* {
+  outline: 1px solid red;
+}
 
 $color_Blue: #4f85a5;
 $color_DarkBlue: #3a657e;
@@ -64,7 +64,7 @@ $color_react_card_left_small: #eee; // card左邊說明
 
 
 
-$navHeight: 70px;
+$navHeight: 55px;
 $menuWidth: 250px;
 
 $breakpoint_XXS: 340px;
@@ -218,9 +218,7 @@ $card-tags-font-sizes: (
 
 %title {
   margin: 0;
-  margin-top: 70px;
-  padding: 30px 25px;
-  // font-size: 50px;
+  padding: 35px 25px;
   @include font-size($page-title-font-sizes);
 }
 

@@ -1,4 +1,5 @@
 .works {
+  position: relative;
   min-height: 500px;
   // background-size: cover;
   h2 {
@@ -6,12 +7,14 @@
   }
   .scroll-section {
     overflow: hidden;
+    height: fit-content;
     .wrap {
       width: fit-content;
       display: flex;
       height: calc(100vh - #{$navHeight} - 100px);
       min-height: 420px;
       padding-right: 50px;
+      margin-left: 40px;
       .card {
         width: 700px;
         height: 350px;
@@ -222,7 +225,7 @@
           }
         }
       }
-      @include size_S {
+      @include size_M {
         margin: 0 auto;
         padding: 0;
         flex-direction: column;
@@ -232,6 +235,21 @@
           margin: 0 0 60px 0;
         }
       }
+    }
+  }
+  .notice {
+    position: absolute;
+    right: 10%;
+    bottom: 3%;
+    display: flex;
+    justify-content: space-between;
+    width: 110px;
+    height: 30px;
+    font-size: 30px;
+    line-height: 30px;
+    z-index: 999;
+    @include size_M {
+      display: none;
     }
   }
 }
