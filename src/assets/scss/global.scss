@@ -2,7 +2,7 @@
 // * {
 //   outline: 1px solid red;
 // }
-
+$color_Main: #283e5a;
 $color_Blue: #4f85a5;
 $color_DarkBlue: #3a657e;
 $color_LightBlue: #7092a7;
@@ -21,15 +21,15 @@ $color_header_active_menu: #eee;
 $color_header_active_menu_bg: #2d496b;
 $color_header_active_hamburger: #eee;
 /* home */
-$color_home_title: #283e5a;
+$color_home_title: $color_Main;
 /* about */
 $color_about_bg: #F8DBBD;
-$color_about_page_title: #283e5a;
-$color_about_block_title: #283e5a;
-$color_about_intro: #283e5a;
-$color_about_timestamp: #283e5a;
-$color_about_timenode: #283e5a;
-$color_about_content:#283e5a;
+$color_about_page_title: $color_Main;
+$color_about_block_title: $color_Main;
+$color_about_intro: $color_Main;
+$color_about_timestamp: $color_Main;
+$color_about_timenode: $color_Main;
+$color_about_content:$color_Main;
 
 /* works 共用顏色 */
 $color_all_card_bg: $color_White; // card背景色(看不見，可不調)
@@ -159,10 +159,10 @@ $page-title-font-sizes: (
 $card-title-font-sizes: (
   null: 20px,
   $breakpoint_XS: 20px,
-  $breakpoint_S: 24px,
-  $breakpoint_M: 26px,
-  $breakpoint_L: 28px,
-  $breakpoint_XL: 30px,
+  $breakpoint_S: 22px,
+  $breakpoint_M: 22px,
+  $breakpoint_L: 24px,
+  $breakpoint_XL: 24px,
 );
 $card-content-font-sizes: (
   null: 11px,

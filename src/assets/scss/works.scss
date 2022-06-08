@@ -248,6 +248,7 @@
     font-size: 30px;
     line-height: 30px;
     z-index: 999;
+    color: $color_Main;
     @include size_M {
       display: none;
     }

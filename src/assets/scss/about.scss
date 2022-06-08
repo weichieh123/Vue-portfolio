@@ -36,17 +36,20 @@
                 width: 80vw;
             }
         }
-        h5 {
-            margin: 20px 0;
-            color: $color_about_block_title;
-            font-weight: 600;
-            width: fit-content;
-        }
         .intro {
             color: $color_about_intro;
         }
         
         .experience {
+            h5 {
+                margin: 20px 0;
+                color: $color_about_block_title;
+                font-weight: 600;
+                width: fit-content;
+                @include size_M {
+                    font-size: 26px;
+                }
+            }
             :deep(.el-timeline){
                 margin: 0;
                 padding-left: 10px;
