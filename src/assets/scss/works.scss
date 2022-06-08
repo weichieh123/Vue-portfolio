@@ -1,3 +1,11 @@
+@keyframes blink {
+	0% {opacity: 0}
+	49%{opacity: 0}
+	50% {opacity: 1}
+}
+
+blink{animation: blink 1s infinite;}
+
 .works {
   position: relative;
   min-height: 500px;
@@ -11,7 +19,7 @@
     .wrap {
       width: fit-content;
       display: flex;
-      height: calc(100vh - #{$navHeight} - 100px);
+      height: calc(100vh - #{$navHeight} - 130px);
       min-height: 420px;
       padding-right: 50px;
       margin-left: 40px;
@@ -247,10 +255,40 @@
     height: 30px;
     font-size: 30px;
     line-height: 30px;
-    z-index: 999;
+    z-index: 9;
     color: $color_Main;
     @include size_M {
       display: none;
+    }
+  }
+}
+.works-layout {
+  background-color: $color_layout_bg;
+  background-image: url("~@/assets/waves/wave-layout-top.svg"), url("~@/assets/waves/wave-layout-bottom.svg");
+  background-repeat: no-repeat;
+  background-position: top, bottom;
+  h2 {
+    color: $color_layout_page_title;
+  }
+  .card {
+    .title {
+      background-color: $color_layout_card_title_bg;
+      a {
+        color: $color_layout_card_title;
+      }
+    }
+    .left {
+      background-color: $color_layout_card_left_bg;
+      .icons  {
+        color: $color_layout_card_left_icons;
+        border-color: $color_layout_card_left_icons;
+      }
+      .tags {
+        color: $color_layout_card_left_tags;
+      }
+      small {
+        color: $color_layout_card_left_small;
+      }
     }
   }
 }
@@ -286,6 +324,7 @@
   background-image: url("~@/assets/waves/wave-react-top.svg");
   background-repeat: no-repeat;
   background-position: top;
+  margin-bottom: 30px;
   h2 {
     color: $color_react_page_title;
   }
@@ -311,33 +350,4 @@
     }
   }
 }
-.works-layout {
-  background-color: $color_layout_bg;
-  background-image: url("~@/assets/waves/wave-layout-top.svg"), url("~@/assets/waves/wave-layout-bottom.svg");
-  background-repeat: no-repeat;
-  background-position: top, bottom;
-  h2 {
-    color: $color_layout_page_title;
-  }
-  .card {
-    .title {
-      background-color: $color_layout_card_title_bg;
-      a {
-        color: $color_layout_card_title;
-      }
-    }
-    .left {
-      background-color: $color_layout_card_left_bg;
-      .icons  {
-        color: $color_layout_card_left_icons;
-        border-color: $color_layout_card_left_icons;
-      }
-      .tags {
-        color: $color_layout_card_left_tags;
-      }
-      small {
-        color: $color_layout_card_left_small;
-      }
-    }
-  }
-}
+

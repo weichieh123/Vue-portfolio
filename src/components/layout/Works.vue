@@ -39,7 +39,7 @@
     </div>
     <div class="notice">
       <small>scroll</small>
-      <el-icon><Right /></el-icon>
+      <blink><el-icon><Right /></el-icon></blink>
     </div>
   </div>
 </template>
