@@ -10,7 +10,10 @@
           alt=""
         />
       </div>
-      <div class="title">Front-end Developer</div>
+      <div class="title">
+        <h1>Huang, W.C.</h1>
+        <span>Front-end Developer</span>
+      </div>
     </div>
   </div>
 </template>

@@ -91,23 +91,32 @@ $home-pic-position: (
   }
   .title {
     position: absolute;
-    width: 500px;
+    // width: 500px;
+    width: fit-content;
     top: 30%;
-    left: 15%;
-    color: $color_home_title;
+    left: 10%;
+    text-align: end;
+    span {
+      color: $color_home_subtitle;
+    }
+    h1 {
+      color: $color_home_name;
+      width: fit-content;
+      margin: 0 auto;
+    }
     @include size_S {
       // top: calc(50vh - #{$navHeight}/2);
       text-align: center;
+      width: 450px;
+      left: calc(50% - 225px);
+    }
+    @include size_XS {
       width: 400px;
       left: calc(50% - 200px);
     }
-    @include size_XS {
-      width: 360px;
-      left: calc(50% - 180px);
-    }
     @include size_XXS {
-      width: 280px;
-      left: calc(50% - 140px);
+      width: 300px;
+      left: calc(50% - 150px);
     }
   }
   .pic {

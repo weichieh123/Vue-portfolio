@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-// * {
-//   outline: 1px solid red;
-// }
+* {
+  outline: 1px solid red;
+}
 $color_Main: #283e5a;
 $color_Blue: #4f85a5;
 $color_DarkBlue: #3a657e;
@@ -21,7 +21,8 @@ $color_header_active_menu: #eee;
 $color_header_active_menu_bg: #2d496b;
 $color_header_active_hamburger: #eee;
 /* home */
-$color_home_title: $color_Main;
+$color_home_name: #1e324e;
+$color_home_subtitle: $color_Main;
 /* about */
 $color_about_bg: #F8DBBD;
 $color_about_page_title: $color_Main;
@@ -139,13 +140,22 @@ $header-logo-font-sizes: (
   $breakpoint_L: 32px,
   $breakpoint_XL: 32px,
 );
-$home-title-font-sizes: (
+$home-name-font-sizes: (
+  null: 50px,
+  $breakpoint_XXS: 56px,
+  $breakpoint_XS: 60px,
+  $breakpoint_S: 72px,
+  $breakpoint_M: 74px,
+  $breakpoint_L: 74px,
+  $breakpoint_XL: 76px,
+);
+$home-subtitle-font-sizes: (
   null: 24px,
-  $breakpoint_XS: 36px,
-  $breakpoint_S: 36px,
-  $breakpoint_M: 38px,
-  $breakpoint_L: 40px,
-  $breakpoint_XL: 42px,
+  $breakpoint_XS: 28px,
+  $breakpoint_S: 28px,
+  $breakpoint_M: 30px,
+  $breakpoint_L: 30px,
+  $breakpoint_XL: 32px,
 );
 $about-block-title-font-sizes: (
   null: 26px,
@@ -200,9 +210,16 @@ $card-tags-font-sizes: (
     }
   }
 } 
-.home .title {
-  @include font-size($home-title-font-sizes);
-}
+.home {
+  .title {
+    h1 {
+      @include font-size($home-name-font-sizes);
+    }
+    span {
+      @include font-size($home-subtitle-font-sizes);
+    }
+  }
+} 
 .about {
   .wrap {
     h5 {
