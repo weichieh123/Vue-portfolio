@@ -144,6 +144,7 @@ blink{animation: blink 1s infinite;}
             // }
           }
           .mobile {
+            cursor: pointer;
             position: absolute;
             width: 130px;
             height: 270px;
@@ -270,6 +271,7 @@ blink{animation: blink 1s infinite;}
     }
   }
   .notice {
+    cursor: pointer;
     position: absolute;
     right: 10%;
     bottom: 35%;
