@@ -228,7 +228,7 @@ $card-tags-font-sizes: (
   z-index: 4;
   width: fit-content;
   margin: 0;
-  margin: 25px auto 25px 35px;
+  margin: 25px auto 25px 40px;
   // margin-left: 30px;
   padding: 10px 25px;
   @include font-size($page-title-font-sizes);
@@ -237,26 +237,26 @@ $card-tags-font-sizes: (
     z-index: -2;
     position: absolute;
     width: 70%;
-    transform: scaleX(1);
     height: 50%;
     top: 20%;
     left: 5%;
     background-color: rgb(246, 239, 172);
-    transform-origin: bottom right;
-    transition: transform 0.25s ease-out;
+    // transform: scaleX(1);
+    // transform-origin: bottom right;
+    // transition: transform 0.25s ease-out;
   }
   &::after {
     content: '';
     z-index: -1;
     position: absolute;
     width: 70%;
-    transform: scaleX(1);
     height: 25px;
     bottom: 8%;
     right: 2%;
     background-color: rgb(249, 189, 189);
-    transform-origin: bottom right;
-    transition: transform 0.25s ease-out;
+    // transform: scaleX(1);
+    // transform-origin: bottom right;
+    // transition: transform 0.25s ease-out;
   }
 }
 

@@ -4,7 +4,7 @@
     height: 650px;
     top: $navHeight;
     overflow: hidden;
-    padding: 5vw;
+    padding: 5vw 0;
     box-sizing: border-box;
     @include size_M {
         height: fit-content;
@@ -13,10 +13,13 @@
     h2 {
         @extend %title;
         color: $color_about_page_title;
-        margin-left: 50px;
+        // margin-left: 50px;
+        &::before {
+            background-color: rgb(250, 250, 250);    
+        }
     }
     .wrap {
-        
+        padding: 0 5vw;
         height: 100%;
         width: 100%;
         display: flex;

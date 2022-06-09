@@ -334,6 +334,9 @@ blink{animation: blink 1s infinite;}
   background-color: $color_vue_bg;
   h2 {
     color: $color_vue_page_title;
+    &::before {
+      background-color: rgb(250, 250, 250);    
+  }
   }
   .card {
     .title {
