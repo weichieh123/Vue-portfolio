@@ -41,53 +41,56 @@ $home-pic-position: (
   null: (
     right: 2%,
     right-offset: 155px,
-    top: 9%,
+    top: 35%,
     top-offset: 35px,
   ),
   $breakpoint_XXS:(
     right: 4%,
     right-offset: 180px,
-    top: 9%,
+    top: 35%,
     top-offset: 35px,
   ),
   $breakpoint_XS: (
     right: 4%,
     right-offset: 234px,
-    top: 9%,
+    top: 25%,
     top-offset: 50px,
   ),
   $breakpoint_S: (
     right: 13%,
     right-offset: 240px,
-    top: 10%,
+    top: 30%,
     top-offset: 52px,
   ),
   $breakpoint_M: (
     right: 14%,
     right-offset: 285px,
-    top: 11%,
+    top: 30%,
     top-offset: 60px,
   ),
   $breakpoint_L: (
     right: 15%,
     right-offset: 290px,
-    top: 12%,
+    top: 30%,
     top-offset: 60px,
   ),
   $breakpoint_XL: (
     right: 16%,
     right-offset: 290px,
-    top: 13%,
+    top: 23%,
     top-offset: 60px,
   ),
 );
 
 .home {
   // background-color: rgb(242, 244, 145);
-  min-height: 550px;
+  min-height: 650px;
   position: relative;
   @include size_S {
-    min-height: 410px;
+    min-height: 550px;
+  }
+  @include height_XXS {
+    min-height: 435px; // 480 - navHeight
   }
   .title {
     position: absolute;
@@ -108,13 +111,14 @@ $home-pic-position: (
       // top: calc(50vh - #{$navHeight}/2);
       text-align: center;
       width: 450px;
-      left: calc(50% - 225px);
+      left: calc(50% - 240px);
     }
     @include size_XS {
       width: 400px;
       left: calc(50% - 200px);
     }
     @include size_XXS {
+      top: 10%;
       width: 300px;
       left: calc(50% - 150px);
     }

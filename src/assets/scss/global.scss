@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-* {
-  outline: 1px solid red;
-}
+// * {
+//   outline: 1px solid red;
+// }
 $color_Main: #283e5a;
 $color_Blue: #4f85a5;
 $color_DarkBlue: #3a657e;
@@ -75,7 +75,7 @@ $breakpoint_M: 768px;
 $breakpoint_L: 992px;
 $breakpoint_XL: 1200px;
 
-$height_XXS: 400px;
+$height_XXS: 500px;
 $height_XS: 650px;
 $height_S: 700px;
 $height_M: 800px;
@@ -141,8 +141,8 @@ $header-logo-font-sizes: (
   $breakpoint_XL: 32px,
 );
 $home-name-font-sizes: (
-  null: 50px,
-  $breakpoint_XXS: 56px,
+  null: 40px,
+  $breakpoint_XXS: 52px,
   $breakpoint_XS: 60px,
   $breakpoint_S: 72px,
   $breakpoint_M: 74px,
