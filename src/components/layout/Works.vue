@@ -5,7 +5,7 @@
       <div class="wrap">
         <div class="card" v-for="(work, i) in works" :key="i">
           <h4 class="title">
-            <a :href="work.link">{{ work.title }}</a>
+            <a :href="work.link">{{ work.title }}<el-icon class="connection"><Connection /></el-icon></a>
           </h4>
           <div class="left">
             <div class="icons">
@@ -45,8 +45,9 @@
 </template>
 
 <script setup>
-import { computed, defineProps, toRefs } from 'vue';
+import { computed, toRefs } from 'vue';
 
+// eslint-disable-next-line no-undef
 const props = defineProps({
   title: {
     type: String,
