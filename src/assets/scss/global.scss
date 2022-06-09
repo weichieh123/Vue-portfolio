@@ -74,6 +74,13 @@ $breakpoint_M: 768px;
 $breakpoint_L: 992px;
 $breakpoint_XL: 1200px;
 
+$height_XXS: 400px;
+$height_XS: 650px;
+$height_S: 700px;
+$height_M: 800px;
+$height_L: 850px;
+$height_XL: 900px;
+
 $breakpoints: (
   xsmall: $breakpoint_XS,
   small: $breakpoint_S,
@@ -280,6 +287,37 @@ $card-tags-font-sizes: (
 }
 @mixin size_XXS {
   @media (max-width: $breakpoint_XXS) {
+    @content;
+  }
+}
+
+@mixin height_XL {
+  @media (max-height: $height_XL) {
+    @content;
+  }
+}
+@mixin height_L {
+  @media (max-height: $height_L) {
+    @content;
+  }
+}
+@mixin height_M {
+  @media (max-height: $height_M) {
+    @content;
+  }
+}
+@mixin height_S {
+  @media (max-height: $height_S) {
+    @content;
+  }
+}
+@mixin height_XS {
+  @media (max-height: $height_XS) {
+    @content;
+  }
+}
+@mixin height_XXS {
+  @media (max-height: $height_XXS) {
     @content;
   }
 }

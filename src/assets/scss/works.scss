@@ -272,7 +272,7 @@ blink{animation: blink 1s infinite;}
   .notice {
     position: absolute;
     right: 10%;
-    bottom: 3%;
+    bottom: 35%;
     display: flex;
     justify-content: space-between;
     width: 110px;
@@ -281,6 +281,18 @@ blink{animation: blink 1s infinite;}
     line-height: 30px;
     z-index: 9;
     color: $color_Main;
+    @include height_L {
+      bottom: 25%;
+    }
+    @include height_M {
+      bottom: 15%;
+    }
+    @include height_S {
+      bottom: 10%;
+    }
+    @include height_XS {
+      bottom: 5%;
+    }
     @include size_M {
       display: none;
     }
