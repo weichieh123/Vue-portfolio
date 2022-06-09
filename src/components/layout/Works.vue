@@ -17,7 +17,7 @@
                 ># {{ tag }}</span
               >
             </div>
-            <small class="content-mobile">{{ work.content }}</small>
+            <!-- <small class="content-mobile">{{ work.content }}</small> -->
           </div>
           <div class="right">
             <img
@@ -31,9 +31,9 @@
               />
             </div>
           </div>
-          <div class="content" :class="{ isLong: work.isLong }">
+          <!-- <div class="content" :class="{ isLong: work.isLong }">
             <span>{{ work.content }}</span>
-          </div>
+          </div> -->
         </div>
       </div>
     </div>
