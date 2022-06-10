@@ -45,7 +45,7 @@ $color_layout_card_left_icons: #fff; // card左邊icons
 $color_layout_card_left_tags: #eee; // card左邊tags
 $color_layout_card_left_small: #eee; // card左邊說明
 /* works-vue */
-$color_vue_bg: #ead9c7;
+$color_vue_bg: #F8DBBD;
 $color_vue_page_title: #3a5272;
 $color_vue_card_title: $color_White; // card標題
 $color_vue_card_title_bg: $color_DarkBlue; // card標題背景色
@@ -257,7 +257,9 @@ $card-tags-font-sizes: (
     height: 50%;
     top: 20%;
     left: 5%;
-    background-color: rgb(246, 239, 172);
+    background-color: #F8DBBD;
+
+      
     // transform: scaleX(1);
     // transform-origin: bottom right;
     // transition: transform 0.25s ease-out;
@@ -267,10 +269,11 @@ $card-tags-font-sizes: (
     z-index: -1;
     position: absolute;
     width: 70%;
-    height: 25px;
+    height: 35px;
     bottom: 8%;
     right: 2%;
-    background-color: rgb(249, 189, 189);
+    // background-color: rgb(249, 189, 189);
+    background-color: rgb(251, 242, 157); 
     // transform: scaleX(1);
     // transform-origin: bottom right;
     // transition: transform 0.25s ease-out;

@@ -39,7 +39,7 @@
     </div>
     <div class="notice">
       <small>scroll</small>
-      <blink><el-icon><Right /></el-icon></blink>
+      <div class="blink"><el-icon><Right /></el-icon></div>
     </div>
   </div>
 </template>
@@ -64,7 +64,7 @@ const { title, works, path } = toRefs(props);
 
 const isMobile = computed(() => {
   const ifIsMobile = window.matchMedia('only screen and (max-width: 576px)');
-  console.log('mobile??', ifIsMobile.matches);
+  // console.log('mobile??', ifIsMobile.matches);
   return ifIsMobile.matches;
 });
 

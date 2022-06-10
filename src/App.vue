@@ -1,7 +1,7 @@
 <template>
   <div class="app">
     <Header />
-    <div class="section" @click="closeMenu">
+    <div id="section" class="section" @click="closeMenu">
       <Home />
       <About />
       <WorksLayout />

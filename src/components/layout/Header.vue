@@ -18,14 +18,14 @@
     <nav :class="{ active: isOpen }">
       <div class="sidemenu__wrap">
         <ul class="sidemenu__list">
-          <li class="sidemenu__item" @click="toggleIsOpen"><a :class="{ active: isOpen }" href="#home" >Home</a> </li>
-          <li class="sidemenu__item" @click="toggleIsOpen"><a :class="{ active: isOpen }" href="#about" >About</a></li>
+          <li class="sidemenu__item" @click="toggleIsOpen"><a :class="{ active: isOpen }" href="#home" v-smooth-scroll>Home</a> </li>
+          <li class="sidemenu__item" @click="toggleIsOpen"><a :class="{ active: isOpen }" href="#about" v-smooth-scroll="{ offset: -50, container: '#section', }">About</a></li>
           <li class="sidemenu__item">
-            <a :class="{ active: isOpen }" href="#">Works</a>
+            <a :class="{ active: isOpen }" href="#works-layout" @click="toggleIsOpen" v-smooth-scroll="{ offset: -50 }" >Works</a>
             <ul>
-              <li><a :class="{ active: isOpen }" class="sub-item" href="#works-layout" @click="toggleIsOpen">- Layout</a></li>
-              <li><a :class="{ active: isOpen }" class="sub-item" href="#works-vue" @click="toggleIsOpen">- Vue</a></li>
-              <li><a :class="{ active: isOpen }" class="sub-item" href="#works-react" @click="toggleIsOpen">- React</a></li>
+              <li><a :class="{ active: isOpen }" class="sub-item" href="#works-layout" @click="toggleIsOpen" v-smooth-scroll="{ offset: -50 }">- Layout</a></li>
+              <li><a :class="{ active: isOpen }" class="sub-item" href="#works-vue" @click="toggleIsOpen" v-smooth-scroll="{ offset: -50 }">- Vue</a></li>
+              <li><a :class="{ active: isOpen }" class="sub-item" href="#works-react" @click="toggleIsOpen" v-smooth-scroll="{ offset: -50 }">- React</a></li>
               </ul>
             </li>
         </ul>

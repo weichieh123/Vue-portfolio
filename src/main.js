@@ -17,6 +17,8 @@ Object.keys(Icons).forEach((key) => {
 app.use(ElementPlus);
 app.use(router);
 app.use(store);
-app.use(VueSmoothScroll);
+app.use(VueSmoothScroll, {
+  // offset: -50,
+});
 app.directive('dragscroll', dragscrollNext);
 app.mount('#app');
