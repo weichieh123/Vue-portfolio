@@ -21,13 +21,23 @@
       background-color: $color_header_active_bg;
     }
     .logo {
-      color: $color_header_logo;
-      line-height: $navHeight;
-      font-weight: 500;
+      // color: $color_header_logo;
+      // line-height: $navHeight;
+      // font-weight: 500;
       cursor: pointer;
-      &.active {
-        color: $color_header_active_logo;
+      width: 55px;
+      height: 55px;
+      box-sizing: border-box;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      img {
+        width: 90%;
+
       }
+      // &.active {
+      //   color: $color_header_active_logo;
+      // }
       // span {
       //   @include size_S {
       //     display: none;

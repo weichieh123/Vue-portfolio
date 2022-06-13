@@ -1,7 +1,8 @@
 <template>
   <div class="header" :class="{ active: isOpen }">
     <div class="logo" :class="{ active: isOpen }">
-      <el-icon><video-camera-filled /></el-icon>
+      <!-- <el-icon><video-camera-filled /></el-icon> -->
+      <img :src="require(`@/assets/logo.png`)" alt="">
       <!-- <span> Weichieh</span> -->
     </div>
     <div class="sidemenu">
